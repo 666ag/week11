@@ -1,5 +1,4 @@
 <?php
-echo "<ul class='nav'>";
 // Get table records
 $sql = "SELECT * FROM nav";
 $result = $conn->query($sql);
@@ -13,5 +12,5 @@ if ($result->num_rows > 0){
     echo "No results";
 }
 echo "</ul>";
-//$conn->close();
+$conn->close();
 ?>
